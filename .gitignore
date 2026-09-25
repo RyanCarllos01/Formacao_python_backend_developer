@@ -2,3 +2,17 @@ __pycache__/
 *.pyc
 .venv/
 .env
+
+# Python caches and local test output
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+
+# Local environments and configuration
+**/.venv/
+**/.env
+
+# Local databases and runtime files
+**/*.sqlite
+**/*.sqlite3
+**/instance/

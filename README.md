@@ -1,20 +1,20 @@
-# Formação Python Backend Developer
+# Formaï¿½ï¿½o Python Backend Developer
 
-Este repositório reúne alguns exercícios e práticas de Python para formação backend, com foco em:
+Este repositï¿½rio reï¿½ne alguns exercï¿½cios e prï¿½ticas de Python para formaï¿½ï¿½o backend, com foco em:
 
 - primeiros passos e listas em Python
-- gestão de ambiente virtual com Pipenv
+- gestï¿½o de ambiente virtual com Pipenv
 - acesso a banco de dados SQLite com Python
-- prevenção de SQL Injection
-- transações e rollback
+- prevenï¿½ï¿½o de SQL Injection
+- transaï¿½ï¿½es e rollback
 
 ## Estrutura
 
-- `01_boas_praticas.py` — prática inicial com listas e exercícios básicos
-- `01 - Ambiente virtual/Pipfile` — configuração do ambiente virtual
-- `bancoDeDados/01_dbapi.py` — acesso ao SQLite via DB-API
-- `bancoDeDados/02_injecao_sql.py` — exemplo de vulnerabilidade e correção
-- `bancoDeDados/03_transacao.py` — controle de transações com commit e rollback
+- `01_boas_praticas.py` ï¿½ prï¿½tica inicial com listas e exercï¿½cios bï¿½sicos
+- `01 - Ambiente virtual/Pipfile` ï¿½ configuraï¿½ï¿½o do ambiente virtual
+- `bancoDeDados/01_dbapi.py` ï¿½ acesso ao SQLite via DB-API
+- `bancoDeDados/02_injecao_sql.py` ï¿½ exemplo de vulnerabilidade e correï¿½ï¿½o
+- `bancoDeDados/03_transacao.py` ï¿½ controle de transaï¿½ï¿½es com commit e rollback
 
 ## Como executar
 
@@ -22,3 +22,26 @@ Este repositório reúne alguns exercícios e práticas de Python para formação back
 python 01_boas_praticas.py
 python bancoDeDados/01_dbapi.py
 ```
+
+## Modulo 2: Desenvolvimento de APIs com Flask
+
+O projeto em `2 modulo_desenvolvimento_api_com_flask/` implementa uma API Flask
+com SQLAlchemy, Flask-Migrate, JWT, roles de usuario e testes unitarios e de
+integracao.
+
+### Executar a API
+
+```powershell
+cd "2 modulo_desenvolvimento_api_com_flask"
+poetry install
+$env:PYTHONPATH = (Get-Location).Path
+poetry run flask --app src.app run --debug
+```
+
+### Executar os testes
+
+```powershell
+poetry run pytest -vv
+```
+
+O banco SQLite, ambientes virtuais e caches locais nao sao versionados.
